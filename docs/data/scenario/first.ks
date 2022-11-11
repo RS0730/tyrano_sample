@@ -1,23 +1,22 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="急いで家を出るか諦めて遅刻するかの朝"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「急いで家を出るか諦めて遅刻するかの朝」[l][r]
 
-メロスは激怒した。[l][r]
+昨夜は夜更かしした。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+必ず、二度寝せず起床すると決意した。[l][r]
 
 (中略)[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。何も知らずに待つ友はどんな顔をしているだろうか。。。[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_sleep] →諦めて遅刻する [endlink][r]
+[link target=*tag_run] →急いで家を出る [endlink][r]
 [s]
 
 *tag_sleep
@@ -26,8 +25,8 @@
 
 [bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+私は何かを悟ったように再び目を閉じた。[l][r]
+夢の中で友が笑っている。[r]
 
 【 BAD END 】[l][cm]
 
@@ -35,12 +34,33 @@
 
 *tag_run
 
-[bg storage=run.jpg time=500]
+[bg storage=dash.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+歯ブラシを加えながら、ドライヤーを手に持ち、服を着替えはじめる。[l][r]
+あれ、やる気の様子がおかしい…[r]
 
-【 GOOD END 】[l][cm]
+[link target=*tag_sleep2] →やっぱり寝る [endlink][r]
+[link target=*tag_run2] →力をふり絞り家を出る [endlink][r]
+[s]
+
+*tag_sleep2
+
+やはり二度寝に限る。[r]
+その後私が遊びに誘われることはなかった。[r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_run2
+
+[bg storage=dash.jpg time=500]
+
+[cm]
+ついに怠惰に勝利し、決めた顔をして待ち合わせ場所に到着。[1][r]
+ふと携帯に目をやると、「ごめん、寝てたわw」[r]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
